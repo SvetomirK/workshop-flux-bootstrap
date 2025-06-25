@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: myteam
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://github.com/SvetomirK/workshop-flux-myteam
+  ref:
+    branch: main
